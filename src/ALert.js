@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
-const ALert = () => {
+const ALert = ({type, msg}) => {
     return (
-        <div>
-            Alert.js
-        </div>
+        <p className={`alert alert-${type}`}>
+            {msg}
+        </p>
     )
 }
 
